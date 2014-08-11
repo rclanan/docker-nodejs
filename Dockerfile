@@ -1,16 +1,10 @@
 # Dockerfile for node.js
 # http://nodejs.org/
 
-FROM debian:jessie
+FROM rclanan/docker-debian
 MAINTAINER Ray Clanan <rclanan@utopianconcept.com>
 
 RUN apt-get update && apt-get upgrade -y && apt-get install --no-install-recommends -y \
-  build-essential \
-  software-properties-common \
-  curl \
-  wget \
-  unzip \
-  git-core \
   python \
   python-dev \
   python-pip \
