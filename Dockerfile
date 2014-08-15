@@ -24,7 +24,7 @@ RUN \
   rm -rf /tmp/node-v* && \
   echo '\n# Node.js\nexport PATH="node_modules/.bin:$PATH"' >> /root/.bash_profile
 
-RUN npm install -g bower grunt-cli
+RUN npm install -g bower grunt-cli gulp
 
 VOLUME ["/data"]
 
